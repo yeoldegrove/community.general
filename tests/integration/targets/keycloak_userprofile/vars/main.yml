@@ -76,6 +76,7 @@ attributes_default:
 attributes_additional:
   - name: additionalAttribute
     displayName: additionalAttribute
+    group: user-metadata
     required:
       roles:
         - user

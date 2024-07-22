@@ -127,6 +127,10 @@ options:
                                 description:
                                     - Annotations for the attribute.
                                 type: dict
+                            group:
+                                description:
+                                    - Specifies the user profile group where this attribute will be added.
+                                type: str
                             permissions:
                                 description:
                                     - The permissions for viewing and editing the attribute.
@@ -395,6 +399,7 @@ def main():
                                     # }
                                 ),
                                 'annotations': dict(type='dict'),
+                                'group': dict(type='str'),
                                 'permissions': dict(
                                     type='dict',
                                     options={
